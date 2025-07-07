@@ -1,0 +1,261 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* globals.css */
+@media (min-width: 1024px) and (max-width: 1025px) {
+  /* Force mobile navbar and layout */
+  .md\\:hidden {
+    display: block !important;
+  }
+
+  .md\\:flex,
+  .md\\:block {
+    display: none !important;
+  }
+
+  /* Optional: override paddings if needed */
+  .md\\:px-20 {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+
+  /* Optional: override text sizes if needed */
+  .md\\:text-4xl {
+    font-size: 1.5rem !important;
+  }
+
+  .md\\:text-7xl {
+    font-size: 3rem !important;
+  }
+}
+
+/* globals.css */
+.mask-arch {
+  -webkit-mask-image: url('/mask.png');
+  mask-image: url('/mask.png');
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+
+/* Default: Desktop (grid 2 columns) */
+.custom-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 1026px) {
+  .custom-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Default image size */
+.custom-image-wrapper {
+  width: 320px;
+  height: 500px;
+}
+
+@media (min-width: 640px) {
+  .custom-image-wrapper {
+    width: 340px;
+    height: 520px;
+  }
+}
+
+@media (min-width: 768px) {
+  .custom-image-wrapper {
+    width: 380px;
+    height: 560px;
+  }
+}
+
+@media (min-width: 1026px) {
+  .custom-image-wrapper {
+    width: 400px;
+    height: 600px;
+  }
+}
+
+/* Text alignment */
+.custom-text {
+  text-align: center;
+}
+
+@media (min-width: 1026px) {
+  .custom-text {
+    text-align: left;
+  }
+}
+
+@font-face {
+  font-family: 'GT Walsheim';
+  src: url('/fonts/GT-Walsheim-Pro-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboxcrough';
+  src: url('/fonts/roxborough-cf.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Black Mango ExtraBold';
+  src: url('/fonts/Black-Mango-ExtraBold.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'BaskervilleItalicBT';
+  src: url('/fonts/BaskervilleItalicBT.woff') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Custom classes for fonts */
+.text-gtwalsheim {
+  font-family: 'GT Walsheim', sans-serif;
+}
+
+.text-roboxcrough {
+  font-family: 'Roboxcrough', sans-serif;
+}
+.text-Black-Mango-ExtraBold {
+  font-family: 'Black Mango ExtraBold', sans-serif;
+}
+.text-BaskervilleItalicBT {
+  font-family: 'BaskervilleItalicBT', sans-serif;
+}
+/* global.css */
+@media (min-width: 786px) and (max-width: 1025px) {
+  /* Tablet view behaves like mobile */
+  .show-desktop-only {
+    display: none !important;
+  }
+
+  .show-mobile-only {
+    display: block !important;
+  }
+
+  .hide-tablet {
+    display: none !important;
+  }
+}
+@media (min-width: 1026px) {
+  .custom-desktop\:flex {
+    display: flex !important;
+  }
+  .custom-desktop\:block {
+    display: block !important;
+  }
+  .custom-desktop\:hidden {
+    display: none !important;
+  }
+  .custom-desktop\:px-20 {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
+  .custom-desktop\:text-6xl {
+    font-size: 3.75rem !important;
+    line-height: 1 !important;
+  }
+  .custom-desktop\:text-left {
+    text-align: left !important;
+  }
+  .custom-desktop\:items-start {
+    align-items: flex-start !important;
+  }
+  .custom-desktop\:max-w-\[800px\] {
+    max-width: 800px !important;
+  }
+}
+
+@media (min-width: 786px) and (max-width: 1025px) {
+  .custom-tablet\:flex-col {
+    flex-direction: column;
+  }
+
+  .custom-tablet\:items-center {
+    align-items: center;
+  }
+
+  .custom-tablet\:text-center {
+    text-align: center;
+  }
+
+  .custom-tablet\:text-left {
+    text-align: left;
+  }
+
+  .custom-tablet\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .custom-tablet\:max-w-full {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .tablet-stack {
+    flex-direction: column !important;
+  }
+}
+/* Tailwind's md starts at 768px, so by default, tablet (1024px) shows desktop layout */
+/* We want to hide desktop view between 768px and 1024px */
+/* And show mobile view in that same range */
+
+/* Hide desktop grid between 768px and 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .tablet-hide-desktop {
+    display: none !important;
+  }
+  .tablet-show-mobile {
+    display: block !important;
+  }
+}
+
+/* Ensure desktop shows on md+ (above 1024px) */
+@media (min-width: 1025px) {
+  .tablet-hide-desktop {
+    display: grid !important;
+  }
+  .tablet-show-mobile {
+    display: none !important;
+  }
+}
