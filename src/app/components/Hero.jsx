@@ -1,24 +1,20 @@
-"use client";
+"use client"
+import { useState, useEffect } from "react"
+import Image from "next/image"
+import { Menu, X } from "lucide-react"
+import dynamic from "next/dynamic"
 
-import { useState, useEffect } from "react";
-import Image from "next/image";
-import { Menu, X } from "lucide-react";
-import dynamic from "next/dynamic";
-
-const MotionDiv = dynamic(
-  () => import("framer-motion").then((mod) => mod.motion.div),
-  { ssr: false }
-);
+const MotionDiv = dynamic(() => import("framer-motion").then((mod) => mod.motion.div), { ssr: false })
 
 export default function Hero() {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [mounted, setMounted] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false)
+  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
-    setMounted(true);
-  }, []);
+    setMounted(true)
+  }, [])
 
-  if (!mounted) return null;
+  if (!mounted) return null
 
   return (
     <>
@@ -33,21 +29,12 @@ export default function Hero() {
             margin-right: auto !important;
             line-height: 1.2 !important;
           }
-
-          /* Adjust the buttons container spacing */
-          .hero-subtitle-buttons {
-            margin-top: 1.5rem !important;
-            flex-direction: column !important;
-            gap: 1rem !important;
-            align-items: center !important;
+          /* Adjust the subtitle positioning on mobile */
+          .hero-subtitle {
+            font-size: 1.25rem !important;
+            line-height: 1.4 !important;
+            padding: 0 1rem !important;
           }
-
-          /* Make buttons full width on mobile */
-          .hero-subtitle-buttons a {
-            width: 100% !important;
-            max-width: 300px;
-          }
-
           /* Reduce padding on the container */
           .hero-content-container {
             padding-left: 1.25rem !important;
@@ -55,7 +42,6 @@ export default function Hero() {
           }
         }
       `}</style>
-
       <section
         className="relative h-screen w-full bg-cover bg-center bg-no-repeat overflow-x-hidden"
         style={{
@@ -66,15 +52,8 @@ export default function Hero() {
         {/* Navbar */}
         <nav className="fixed top-0 left-0 w-full z-50 px-4 py-4 flex justify-between items-center backdrop-blur-md bg-white/10 text-white">
           <div className="relative w-32 h-10">
-            <Image
-              src="/logoB.png"
-              alt="Anand Prakash Logo"
-              fill
-              className="object-contain"
-              priority
-            />
+            <Image src="/logoB.png" alt="Anand Prakash Logo" fill className="object-contain" priority />
           </div>
-
           <ul className="hidden md:flex space-x-6 text-base font-light">
             <li>
               <a href="#home" className="hover:text-blue-200">
@@ -92,21 +71,18 @@ export default function Hero() {
               </a>
             </li>
           </ul>
-
           <div className="hidden md:block">
             <a
               href="https://bookings.akhandayogawellbeing.com/guestbookinglink"
               target="_blank"
               className="bg-blue-400 text-white px-4 py-2 rounded-full hover:bg-blue-500 transition text-sm"
+              rel="noreferrer"
             >
               Book Now
             </a>
           </div>
-
           <div className="md:hidden">
-            <button onClick={() => setMenuOpen(!menuOpen)}>
-              {menuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
+            <button onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X size={24} /> : <Menu size={24} />}</button>
           </div>
         </nav>
 
@@ -126,6 +102,7 @@ export default function Hero() {
               href="https://bookings.akhandayogawellbeing.com/guestbookinglink"
               target="_blank"
               className="inline-block mt-2 bg-blue-400 text-white px-5 py-2 rounded-full hover:bg-blue-500 transition"
+              rel="noreferrer"
             >
               Book Now
             </a>
@@ -138,23 +115,23 @@ export default function Hero() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: false }}
-          className="relative z-10 h-full flex flex-col justify-center px-6 sm:px-10 md:px-20 custom-tablet:px-6 hero-content-container"
+          className="relative z-10 h-full flex flex-col justify-between px-6 sm:px-10 md:px-20 hero-content-container"
         >
-          <div className="text-white">
-            <div className="mt-10 flex flex-col items-center text-center custom-tablet:mt-6 hero-subtitle-buttons">
-              <p className="text-7xl sm:text-8xl md:text-8xl font-light text-center mb-56 text-Black-Mango-ExtraBold">
-                AKANDHA AYURVEDA
-              </p>
-            </div>
-            <div className="w-full fixed bottom-8 left-0 text-center px-5 z-10">
-              <p className="text-2xl sm:text-3xl md:text-4xl leading-relaxed w-full font-medium text-BaskervilleItalicBT text-white">
-                Traditional Healing Immersions in the Yogic Heartland of
-                Rishikesh
-              </p>
-            </div>
+          {/* Main Title - Positioned in upper center */}
+          <div className="flex-1 flex items-center justify-center pt-10">
+            <h1 className="text-6xl sm:text-7xl md:text-6xl lg:text-8xl font-light text-center text-Black-Mango-ExtraBold text-white hero-heading">
+              AKHANDA AYURVEDA
+            </h1>
+          </div>
+
+          {/* Subtitle - Positioned at bottom with proper margin */}
+          <div className="pb-12 sm:pb-16 md:pb-20">
+            <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-relaxed text-center font-medium text-BaskervilleItalicBT text-white hero-subtitle">
+              Traditional Healing Immersions in the Yogic Heartland of Rishikesh
+            </p>
           </div>
         </MotionDiv>
       </section>
     </>
-  );
+  )
 }
