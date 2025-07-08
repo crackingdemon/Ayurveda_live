@@ -14,7 +14,7 @@ export default function Tier4Section() {
   if (!mounted) return null
 
   return (
-    <section className="min-h-screen w-full bg-[#dacbb2] flex items-center justify-center text-[#683900] py-12 px-4 sm:px-8 md:px-16 lg:px-24">
+    <section className="min-h-screen w-full bg-[#dacbb2] flex items-center text-[#683900] py-8 px-4 sm:px-8 md:px-16 lg:px-24">
       <MotionDiv
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}

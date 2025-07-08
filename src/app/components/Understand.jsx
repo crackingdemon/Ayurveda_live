@@ -26,7 +26,7 @@ export default function AyurvedaSection() {
         viewport={{ once: false }}
         className="w-full max-w-6xl flex flex-col items-center text-center space-y-8"
       >
-        {/* Title */}
+        {/* Title */}vv
         <h1 className="text-Black-Mango-ExtraBold text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-snug font-normal">
           Understanding Ayurveda: The Sacred <br /> Science of Balance
         </h1>
@@ -60,7 +60,7 @@ export default function AyurvedaSection() {
         </div>
 
         {/* Final Statement */}
-        <p className="text-white font-semibold text-lg sm:text-xl md:text-2xl max-w-5xl leading-relaxed pt-4">
+        <p className="text-white font-semibold text-gtwalsheim text-lg sm:text-xl md:text-2xl max-w-5xl leading-relaxed pt-4">
           Through personalized assessment, diet, therapies, and subtle lifestyle interventions,
           <br />
           Ayurveda aims not merely to treat illness, but to restore wholeness.

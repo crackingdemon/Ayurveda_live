@@ -19,26 +19,29 @@ import FooterSection from "./components/Footer";
 import Carousel from "./components/Carousel";
 import OfferingsSection from "./components/OfferingsSection";
 import AkhandYogaVideo from "./components/AkhandYogaVideo";
-import Understand from "./components/Understand.jsx"
+import Understand from "./components/Understand.jsx";
 import TierSection from "./components/TierSection";
 import Tier2 from "./components/Tier2";
 import Tier3 from "./components/Tier3";
 import Tier4 from "./components/Tier4";
+import Couples from "./components/Couples.jsx";
+import Tier5 from "./components/Tier5.jsx";
 
 // pages/index.tsx
 export default function Home() {
-
   const onlineAndTrustData = [
     {
       title: "Akhanda Online Ashram",
-      description: "A global live, virtual sanctuary to support your practice from anywhere in the world",
+      description:
+        "A global live, virtual sanctuary to support your practice from anywhere in the world",
       image: "/primary/2h.png", // update with real image path
       buttonLabel: "Learn More",
       buttonLink: "https://akhandayoga.com/pages/ashram-online",
     },
     {
       title: "Anand Prakash Yoga Ashram Trust",
-      description: "A Sacred Urban Ashram in Rishikesh for Self Healing, Sādhanā, and Community",
+      description:
+        "A Sacred Urban Ashram in Rishikesh for Self Healing, Sādhanā, and Community",
       image: "/primary/4h.png",
       buttonLabel: "Learn More",
       buttonLink: "https://ashram.akhandayoga.com/",
@@ -62,7 +65,7 @@ export default function Home() {
     },
   ];
   return (
-    <div >
+    <div>
       <Hero />
       <WelcomeSection />
       <Understand />
@@ -71,6 +74,12 @@ export default function Home() {
       <Tier2 />
       <Tier3 />
       <Tier4 />
+      <Couples />
+      <Tier5 />
+      <FullImageSection src="/primary/hawan.png" alt="view" />
+      <WhatIsAshramSection />
+      <WomenSafetySection />
+      <Philosophy />
       {/* <ChoosePathwaySection /> */}
       {/* <OfferingsSection
         heading="Choose Your Pathway"
@@ -89,25 +98,22 @@ export default function Home() {
 
       /> */}
 
-      <AshramExperienceSection />
+      {/* <AshramExperienceSection /> */}
+
+      {/* <History /> */}
       
-      <FullImageSection src="/hawan.jpg" alt="view" />
-      <WhatIsAshramSection />
-      <History />
-      <Philosophy />
-      <LivingAkhandaWaySection />
+      {/* <LivingAkhandaWaySection />
       <YogaAshramNotForSection />
-      <WomenSafetySection />
+
       <LineageGuruSection />
       <ScheduleSection />
-      <AkhandYogaVideo/>
+      <AkhandYogaVideo />
       <Experience />
       <JungleYogaSection />
       <FullImageSection src="/primary/fullimage.jpg" alt="view" />
-      <QuoteSection x/>
-      <Carousel />
-      <FooterSection />
-
+      <QuoteSection x />
+      <Carousel /> */}
+      {/* <FooterSection /> */}
     </div>
-  )
+  );
 }

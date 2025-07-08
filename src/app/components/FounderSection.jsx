@@ -31,11 +31,11 @@ export default function FounderSection() {
           className="text-[#031059] font-light text-lg sm:text-xl md:text-xl leading-relaxed max-w-lg"
         >
           <h2 className="text-4xl sm:text-4xl mb-6 md:mb-8 text-Black-Mango-ExtraBold">Akhanda Ayurveda Immersion Offerings</h2>
-         <p className="font-montserrat font-semibold text-lg sm:text-xl md:text-2xl mb-6 subtitle-text">
+         <p className="text-gtwalsheim font-semibold text-lg sm:text-xl md:text-2xl mb-6 subtitle-text">
               Each tier below includes:
             </p>
             {/* Changed <ul> to <div> and <li> to <p> */}
-            <div className="space-y-1 font-montserrat font-light text-base sm:text-lg md:text-xl paragraph-text">
+            <div className="space-y-1 text-gtwalsheim font-light text-base sm:text-lg md:text-xl paragraph-text">
               <p className="paragraph-item">Residential stay at the Ashram</p>
               <p className="paragraph-item">Wholesome, sattvic vegetarian meals</p>
               <p className="paragraph-item">

@@ -57,7 +57,7 @@ export default function WelcomeSection() {
         </ul>
 
         {/* Footer Line */}
-        <p className="text-[#031059] font-medium text-center text-lg sm:text-xl md:text-2xl max-w-4xl leading-relaxed">
+        <p className="text-gtwalsheim text-[#031059] font-medium text-center text-lg sm:text-xl md:text-2xl max-w-4xl leading-relaxed">
           Offerings include a stay at Anand Prakash Ashram in Rishikesh — and is
           grounded in the combined wisdom of Yoga and Ayurveda, as taught by
           Himalayan Master Dr. Yogrishi Vishvketu.

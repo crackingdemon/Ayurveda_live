@@ -1,44 +1,51 @@
-'use client';
+"use client"
+import Image from "next/image"
+import { motion } from "framer-motion"
 
-import Image from 'next/image';
-import { motion } from 'framer-motion';
-
-export default function WomenSafetySection() {
+export default function AvailabilityBookingSection() {
   return (
-    <section className="bg-[#ffffff] min-h-screen flex items-center py-16 sm:py-24">
+    <section className="bg-[#0b3b3e] min-h-screen flex items-center py-16 sm:py-20">
       <div className="px-4 sm:px-10 lg:px-16 w-full">
         <div className="flex flex-col lg:flex-row justify-center items-center gap-10 w-full">
-
           {/* Text Section */}
           <motion.div
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             viewport={{ once: false }}
-            className="w-full lg:w-1/2 flex flex-col items-center text-center text-[#1c1f4c] font-sans font-light space-y-6 px-2 md:px-0"
+            className=" w-full flex flex-col items-start text-left text-white font-light space-y-6 px-2 md:px-0"
           >
-            <h2 className="text-roboxcrough font-bold text-[10vw] sm:text-[36px] md:text-[3vw] leading-tight">
-              Is it Safe for <br /> Women Travellers?
+            <h1 className="text-Black-Mango-ExtraBold font-light text-[12vw] sm:text-[48px] md:text-[8vw] lg:text-[5vw] leading-tight serif">
+              Availability & Booking
+            </h1>
+
+            <h2 className="text-gtwalsheim font-light ml-30 text-center text-[4vw] sm:text-[24px] md:text-[2.5vw] lg:text-[2vw] leading-relaxed">
+              Your next step is to email us.
             </h2>
 
-            <p className="font-light text-[3.5vw] flex flex-col gap-1 sm:text-lg md:text-2xl leading-relaxed ">
-              <span className='font-bold'>Yes. Both our Ashrams offer a safe, welcoming environment for solo women travellers.</span><br />
-              <span className='font-bold'>We provide:</span><br />
-              <span >24/7 staff presence and secure, gated premises</span><br />
-              <span>Clear communication about transportation and arrivals</span><br />
-              <span>Respectful staff and co-guests committed to wellbeing</span>
+            <p className="text-gtwalsheim text-center font-light text-[3.5vw] sm:text-lg md:text-xl lg:text-[1.3vw] leading-relaxed max-w-2xl">
+              These offerings are available on an individual basis, year-round, with limited space to ensure
+              personalized care.
             </p>
 
-            <p className="font-bold text-base sm:text-lg md:text-2xl max-w-md">
-              Many women from around the world have experienced empowerment, peace, and transformation during their Ashram and Retreat stays.
+            <p className="text-gtwalsheim text-center font-light text-[3.5vw] sm:text-lg md:text-xl lg:text-[1.3vw] leading-relaxed max-w-2xl">
+              All immersions require an application and intake process to ensure appropriateness and readiness.
+              Placements are available at both Anand Prakash Ashram (Tapovan, Rishikesh) and Sri Jungle Ashram
+              (Kodikhet) depending on season, preference, and practitioner availability.
             </p>
 
-            <button
-              className="mt-4 px-8 py-3 border-2 rounded-full border-[#1c1f4c] text-[#1c1f4c] hover:bg-[#f5f5f5] transition font-medium cursor-pointer"
-              onClick={() => window.location.href = "mailto:retreat@khandayoga.com"}
-            >
-              Book Now!
-            </button>
+            <div className="text-gtwalsheim text-center pt-4">
+              <h3 className="font-light text-[4vw] sm:text-[24px] md:text-[2.5vw] lg:text-[2vw] leading-relaxed mb-6">
+                Begin Your Application
+              </h3>
+
+              <button
+                className="text-center ml-20 px-8 py-4 border-2 rounded-full border-white text-white hover:bg-white hover:text-[#2d5a5a] transition-all duration-300 font-light text-base sm:text-lg cursor-pointer"
+                onClick={() => (window.location.href = "mailto:retreat@khandayoga.com")}
+              >
+                Contact Us for Availability and Tier Guidance
+              </button>
+            </div>
           </motion.div>
 
           {/* Image Section */}
@@ -47,18 +54,17 @@ export default function WomenSafetySection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             viewport={{ once: false }}
-            className="relative w-full lg:w-1/2 aspect-square rounded-t-[50%] bg-amber-200 overflow-hidden shadow-xl"
+            className="relative w-full lg:w-1/2 max-w-md aspect-square rounded-t-full overflow-hidden shadow-xl"
           >
             <Image
-              src="/primary/DSC07539.jpg"
-              alt="Women Safe"
+              src="/primary/massage.png"
+              alt="Ayurvedic treatment - oil therapy session"
               fill
               className="object-cover object-center"
             />
           </motion.div>
-
         </div>
       </div>
     </section>
-  );
+  )
 }
