@@ -1,24 +1,10 @@
-import AshramExperienceSection from "./components/AshramExperienceSection";
-import ChoosePathwaySection from "./components/ChoosePathwaySection";
 import FounderSection from "./components/FounderSection";
 import Hero from "./components/Hero";
-import History from "./components/History";
-import LineageGuruSection from "./components/LineageGuruSection";
-import LivingAkhandaWaySection from "./components/LivingAkhandaWaySection";
 import Philosophy from "./components/Philosophy";
 import WelcomeSection from "./components/WelcomeSection";
 import WhatIsAshramSection from "./components/WhatIsAshramSection";
 import WomenSafetySection from "./components/WomenSafetySection";
-import YogaAshramNotForSection from "./components/YogaAshramNotForSection";
-import ScheduleSection from "./components/ScheduleSection";
-import Experience from "./components/Experience";
-import JungleYogaSection from "./components/JungleYogaSection";
 import FullImageSection from "./components/FullImageSection";
-import QuoteSection from "./components/QuoteSection";
-import FooterSection from "./components/Footer";
-import Carousel from "./components/Carousel";
-import OfferingsSection from "./components/OfferingsSection";
-import AkhandYogaVideo from "./components/AkhandYogaVideo";
 import Understand from "./components/Understand.jsx";
 import TierSection from "./components/TierSection";
 import Tier2 from "./components/Tier2";
@@ -80,40 +66,6 @@ export default function Home() {
       <WhatIsAshramSection />
       <WomenSafetySection />
       <Philosophy />
-      {/* <ChoosePathwaySection /> */}
-      {/* <OfferingsSection
-        heading="Choose Your Pathway"
-        offerings={pathwayData}
-        bgColor="bg-[#03045E]"
-        textColor="#FFBA00"
-        // fullScreen={true}
-
-      />
-      <OfferingsSection
-        offerings={onlineAndTrustData}
-        bgColor="bg-[#FDB813]"
-        textColor="text-[#03045E]"
-        bottomText="Explore each of these unique spaces and find the rhythm of practice that suits your needs"
-        // fullScreen={true}
-
-      /> */}
-
-      {/* <AshramExperienceSection /> */}
-
-      {/* <History /> */}
-      
-      {/* <LivingAkhandaWaySection />
-      <YogaAshramNotForSection />
-
-      <LineageGuruSection />
-      <ScheduleSection />
-      <AkhandYogaVideo />
-      <Experience />
-      <JungleYogaSection />
-      <FullImageSection src="/primary/fullimage.jpg" alt="view" />
-      <QuoteSection x />
-      <Carousel /> */}
-      {/* <FooterSection /> */}
     </div>
   );
 }
