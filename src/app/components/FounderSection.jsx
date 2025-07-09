@@ -5,8 +5,8 @@ import { motion } from 'framer-motion';
 
 export default function FounderSection() {
   return (
-    <section className="bg-white min-h-screen flex items-center py-20">
-      <div className="w-full px-6  sm:px-10 lg:px-20 flex flex-col md:flex-row flex-wrap items-center justify-center gap-10 md:gap-20 lg:gap-28 text-center">
+    <section className="bg-white min-h-screen overflow-hidden flex items-center py-20">
+      <div className="w-full px-6  sm:px-10 lg:px-20 flex flex-col md:flex-row flex-wrap items-center justify-center gap-10 md:gap-20 lg:gap-28 xl:gap-40 2xl:scale-125 text-center">
         
         <motion.div
           initial={{ opacity: 0, y: -50 }}
@@ -28,9 +28,9 @@ export default function FounderSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: false }}
-          className="text-[#031059] font-light text-lg sm:text-xl md:text-xl leading-relaxed max-w-lg"
+          className="text-[#031059] font-light text-lg sm:text-xl md:text-xl leading-relaxed md:pt-40  md:max-w-xl relative"
         >
-          <h2 className="text-4xl sm:text-4xl mb-6 md:mb-8 text-Black-Mango-ExtraBold">Akhanda Ayurveda Immersion Offerings</h2>
+          <h2 className="text-3xl  sm:text-4xl md:text-5xl md:scale-125 md:-top-4 mb-6 md:mb-8 md:leading-14 md:absolute text-Black-Mango-ExtraBold">Akhanda Ayurveda Immersion Offerings</h2>
          <p className="text-gtwalsheim font-semibold text-lg sm:text-xl md:text-2xl mb-6 subtitle-text">
               Each tier below includes:
             </p>

@@ -119,7 +119,7 @@ export default function Hero() {
         >
           {/* Main Title - Positioned in upper center */}
           <div className="flex-1 flex items-center justify-center pt-10">
-            <h1 className="text-6xl sm:text-7xl md:text-6xl lg:text-8xl font-light text-center text-Black-Mango-ExtraBold text-white hero-heading">
+            <h1 className="text-6xl sm:text-7xl md:text-6xl lg:text-8xl xl:text-[7vw] font-light text-center text-Black-Mango-ExtraBold text-white hero-heading">
               AKHANDA AYURVEDA
             </h1>
           </div>

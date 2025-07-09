@@ -20,7 +20,7 @@ export default function Tier4Section() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: false }}
-        className="w-full max-w-6xl flex flex-col items-center space-y-8"
+        className="w-full max-w-6xl flex flex-col items-center 2xl:scale-125 space-y-8"
       >
         {/* Title */}
         <h1 className="text-Black-Mango-ExtraBold text-[#683900] text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight font-light text-center tracking-wide serif">

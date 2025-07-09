@@ -49,7 +49,7 @@ export default function WhyAshramAyurveda() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-Black-Mango-ExtraBold text-[#031059] text-center text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight mb-12 section-title font-normal"
+          className="text-Black-Mango-ExtraBold text-[#031059] 2xl:scale-125 text-center text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight mb-12 section-title font-normal"
         >
           Why Ayurveda Within the Ashram <br /> Context?
         </motion.h1>
