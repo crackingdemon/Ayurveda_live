@@ -29,7 +29,7 @@ export default function CouplesOptionSection() {
         </h1>
 
         {/* Main Content Container */}
-        <div className="text-gtwalsheim w-full flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
+        <div className="text-gtwalsheim w-full flex flex-col lg:flex-row gap-8 lg:gap-12">
           {/* Left Side - Content */}
           <div className="flex-1 space-y-2">
             {/* Subheading */}
@@ -40,7 +40,7 @@ export default function CouplesOptionSection() {
             {/* Services List */}
             <div className="space-y-1 text-[#683900] font-light text-base sm:text-lg md:text-xl leading-relaxed">
               <div className="flex items-start gap-3">
-                <span className="text-[#683900]  text-lg font-bold">•</span>
+                <span className="text-[#683900] text-lg font-bold">•</span>
                 <p>Joint Ayurvedic consultation</p>
               </div>
 
@@ -129,8 +129,8 @@ export default function CouplesOptionSection() {
           </div>
 
           {/* Right Side - Image */}
-          <div className="flex-shrink-0 flex justify-center lg:justify-end">
-            <div className="relative w-80 h-80 sm:w-80 sm:h-80 md:w-96 md:h-96">
+          <div className="flex-1 flex items-center justify-center">
+            <div className="relative w-80 h-80 sm:w-80 sm:h-80 md:w-96 md:h-96 self-center">
               <Image
                 src="/primary/baby.png"
                 alt="Pregnant woman with hands on belly representing couples preparing for conception"
@@ -145,12 +145,12 @@ export default function CouplesOptionSection() {
         {/* Bottom Description */}
         <div className="text-gtwalsheim w-full mt-4">
           <p className="text-[#683900] font-light text-base sm:text-lg md:text-xl leading-relaxed">
-            This nurturing Ayurvedic immersion is designed for women—and optionally, couples—who wish to<br></br> consciously
-            prepare for conception.
+            This nurturing Ayurvedic immersion is designed for women—and optionally, couples—who wish to
+            <br></br> consciously prepare for conception.
           </p>
           <p className="text-[#683900] font-light text-base sm:text-lg md:text-xl leading-relaxed">
-            Rooted in ancient Vedic fertility wisdom, this retreat focuses on physical detoxification, hormonal <br></br> balance,
-            and emotional-spiritual alignment to create a sacred inner environment for new life.
+            Rooted in ancient Vedic fertility wisdom, this retreat focuses on physical detoxification, hormonal{" "}
+            <br></br> balance, and emotional-spiritual alignment to create a sacred inner environment for new life.
           </p>
         </div>
       </MotionDiv>
