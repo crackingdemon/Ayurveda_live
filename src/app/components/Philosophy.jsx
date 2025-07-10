@@ -17,7 +17,7 @@ export default function Philosophy() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: false }}
-        className="relative z-10 max-w-5xl 2xl:scale-125 mx-auto text-center space-y-12"
+        className="relative z-10 max-w-5xl 2xl:scale-150 mx-auto text-center space-y-12"
       >
         <h2 className="text-[clamp(2.5rem,6vw,4rem)] font-light text-white text-Black-Mango-ExtraBold leading-tight serif">
           A Sacred Path of Healing

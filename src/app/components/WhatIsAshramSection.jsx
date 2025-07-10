@@ -42,14 +42,14 @@ export default function WhyAshramAyurveda() {
           }
         }
       `}</style>
-      <section className="min-h-screen w-full bg-[#fffdf3] flex flex-col items-center py-12 px-4 sm:px-8 md:px-16 lg:px-24">
+      <section className="min-h-screen w-full bg-[#fffdf3] flex flex-col items-center justify-center 2xl:scale-125 py-12 px-4 sm:px-8 md:px-16 lg:px-24">
         {/* Section Title */}
         <motion.h1
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-Black-Mango-ExtraBold text-[#031059] 2xl:scale-125 text-center text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight mb-12 section-title font-normal"
+          className="text-Black-Mango-ExtraBold text-[#031059] 2xl:scale-150 text-center text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight mb-12 section-title font-normal"
         >
           Why Ayurveda Within the Ashram <br /> Context?
         </motion.h1>

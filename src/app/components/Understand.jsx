@@ -24,7 +24,7 @@ export default function AyurvedaSection() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: false }}
-        className="w-full max-w-6xl flex flex-col items-center text-center space-y-8"
+        className="w-full max-w-8xl flex flex-col items-center text-center space-y-8"
       >
         {/* Title */}
         <h1 className="text-Black-Mango-ExtraBold text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[4vw] leading-snug font-normal">
@@ -32,7 +32,7 @@ export default function AyurvedaSection() {
         </h1>
 
         {/* Subheading Paragraph */}
-        <p className="text-gtwalsheim text-white font-light leading-relaxed max-w-6xl text-base sm:text-lg md:text-xl lg:text-xl xl:text-[1.5vw]">
+        <p className="text-gtwalsheim text-white font-light leading-relaxed max-w-8xl text-base sm:text-lg md:text-xl lg:text-xl xl:text-[1.5vw]">
           Derived from the Sanskrit words āyuḥ (life) and veda (knowledge), Ayurveda is the comprehensive study of
           life itself — encompassing not only the physical body, but also the mind, senses, emotions, and spiritual
           constitution.
@@ -44,7 +44,7 @@ export default function AyurvedaSection() {
         </h2>
 
         {/* Key Bullet Points */}
-        <div className="text-gtwalsheim text-white font-light text-base sm:text-lg md:text-xl leading-relaxed space-y-2 max-w-6xl lg:text-xl xl:text-[1.5vw]">
+        <div className="text-gtwalsheim text-white font-light text-base sm:text-lg md:text-xl leading-relaxed space-y-2 max-w-8xl lg:text-xl xl:text-[1.5vw]">
           <p>
             The Three Doṣas: Vāta, Pitta, and Kapha — elemental energies that govern bodily function and mental tendencies.
           </p>
@@ -60,7 +60,7 @@ export default function AyurvedaSection() {
         </div>
 
         {/* Final Statement */}
-        <p className="text-white font-semibold text-gtwalsheim text-lg sm:text-xl md:text-2xl max-w-6xl lg:text-xl xl:text-[1.5vw] leading-relaxed pt-4">
+        <p className="text-white font-semibold text-gtwalsheim text-lg sm:text-xl md:text-2xl max-w-8xl lg:text-xl xl:text-[1.5vw] leading-relaxed pt-4">
           Through personalized assessment, diet, therapies, and subtle lifestyle interventions,
           <br />
           Ayurveda aims not merely to treat illness, but to restore wholeness.

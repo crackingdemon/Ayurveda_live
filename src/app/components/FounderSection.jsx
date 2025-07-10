@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 export default function FounderSection() {
   return (
     <section className="bg-white min-h-screen overflow-hidden flex items-center py-20">
-      <div className="w-full px-6  sm:px-10 lg:px-20 flex flex-col md:flex-row flex-wrap items-center justify-center gap-10 md:gap-20 lg:gap-28 xl:gap-40 2xl:scale-125 text-center">
+      <div className="w-full px-6  sm:px-10 lg:px-20 flex flex-col md:flex-row flex-wrap items-center justify-center gap-10 md:gap-20 lg:gap-28 xl:gap-40 2xl:scale-150 text-center">
         
         <motion.div
           initial={{ opacity: 0, y: -50 }}
