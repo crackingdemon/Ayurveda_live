@@ -61,7 +61,7 @@ export default function WhyAshramAyurveda() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
-            className=" font-bold text-base sm:text-lg md:text-2xl 2xl:text-[2vw] leading-relaxed mb-8 intro-paragraph"
+            className=" font-bold text-base sm:text-lg md:text-2xl 2xl:text-[1.5vw] leading-relaxed mb-8 intro-paragraph"
           >
             Unlike many clinical or commercial wellness centres, Akhanda Ayurveda is held within the sacred context of
             Ashram life. This provides a uniquely supportive environment for healing:
@@ -73,7 +73,7 @@ export default function WhyAshramAyurveda() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
-            className="space-y-3 font-light text-base sm:text-lg md:text-xl 2xl:text-[2vw] leading-relaxed mb-8 benefit-list"
+            className="space-y-3 font-light text-base sm:text-lg md:text-xl 2xl:text-[1.5vw] leading-relaxed mb-8 benefit-list"
           >
             <li className="benefit-item">Daily rituals that anchor the nervous system</li>
             <li className="benefit-item">Silence and spiritual rhythm to amplify integration</li>
@@ -88,7 +88,7 @@ export default function WhyAshramAyurveda() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
             viewport={{ once: true }}
-            className=" font-bold text-base sm:text-lg md:text-2xl leading-relaxed 2xl:text-[2vw] conclusion-paragraph"
+            className=" font-bold text-base sm:text-lg md:text-2xl leading-relaxed 2xl:text-[1.5vw] conclusion-paragraph"
           >
             This container strengthens not only the body but the inner resolve – allowing healing to take root at the
             deepest levels of being.
