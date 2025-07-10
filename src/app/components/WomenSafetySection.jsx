@@ -54,7 +54,7 @@ export default function AvailabilityBookingSection() {
                 className="px-8 py-4 border-2 rounded-full border-white text-white hover:bg-white hover:text-[#2d5a5a] transition-all duration-300 font-light text-base sm:text-lg cursor-pointer"
                 onClick={() => (window.location.href = "mailto:retreat@khandayoga.com")}
               >
-                Contact Us for Availability and Tier Guidance
+                Contact Us for Availability &  <br className="block md:hidden"/>Tier Guidance
               </button>
             </div>
           </motion.div>

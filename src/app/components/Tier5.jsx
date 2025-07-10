@@ -90,13 +90,13 @@ export default function Tier5Section() {
             <div className="border border-white/40 rounded-lg overflow-hidden bg-[#683900] shadow-sm">
               {/* Table Header */}
               <div className="grid grid-cols-3">
-                <div className="p-3 sm:p-4 border-r border-white/40 text-left font-semibold text-sm sm:text-base text-white]">
+                <div className="p-3 sm:p-4 border-r border-b border-white/40 text-left font-semibold text-sm sm:text-base text-white]">
                   Duration
                 </div>
-                <div className="p-3 sm:p-4 border-r border-white/40 text-left font-semibold text-sm sm:text-base text-white">
+                <div className="p-3 sm:p-4 border-r border-b border-white/40 text-left font-semibold text-sm sm:text-base text-white">
                   Accommodation
                 </div>
-                <div className="p-3 sm:p-4 text-left font-semibold text-sm sm:text-base text-white">
+                <div className="p-3 sm:p-4 text-left border-b border-white/40 font-semibold text-sm sm:text-base text-white">
                   Price
                 </div>
               </div>
