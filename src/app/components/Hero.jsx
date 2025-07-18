@@ -42,7 +42,7 @@ export default function Hero() {
           }
         }
       `}</style>
-      <section
+      <section id = "home"
         className="relative h-screen w-full bg-cover bg-center bg-no-repeat overflow-x-hidden"
         style={{
           backgroundImage: "url('/primary/hero.png')",

@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 export default function AvailabilityBookingSection() {
   return (
-    <section className="bg-[#0b3b3e] min-h-screen flex items-center py-16 sm:py-20">
+    <section id="retreats" className="bg-[#0b3b3e] min-h-screen flex items-center py-16 sm:py-20">
       <div className="w-full max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-12 flex flex-col items-center">
         {/* Heading Centered Above Everything */}
         <motion.h1
