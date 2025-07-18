@@ -66,7 +66,12 @@ export default function Hero() {
               </a>
             </li>
             <li>
-              <a href="#contact" className="hover:text-blue-200">
+              <a href="#services" className="hover:text-blue-200">
+                Services
+              </a>
+            </li>
+             <li>
+              <a href="mailto:ayurveda@akhandayoga.com" className="hover:text-blue-200">
                 Contact
               </a>
             </li>
@@ -95,7 +100,10 @@ export default function Hero() {
             <a href="#retreats" className="block hover:text-blue-200">
               Retreats
             </a>
-            <a href="#contact" className="block hover:text-blue-200">
+            <a href="#services" className="hover:text-blue-200">
+                Services
+              </a>
+            <a href="mailto:ayurveda@akhandayoga.com" className="block hover:text-blue-200">
               Contact
             </a>
             <a

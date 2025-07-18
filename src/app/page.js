@@ -12,6 +12,7 @@ import Tier3 from "./components/Tier3";
 import Tier4 from "./components/Tier4";
 import Couples from "./components/Couples.jsx";
 import Tier5 from "./components/Tier5.jsx";
+import Footer from "./components/Footer";
 
 // pages/index.tsx
 export default function Home() {
@@ -66,6 +67,7 @@ export default function Home() {
       <WhatIsAshramSection />
       <WomenSafetySection />
       <Philosophy />
+      <Footer />
     </div>
   );
 }
