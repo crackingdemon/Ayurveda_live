@@ -26,9 +26,9 @@ export default function FooterSection() {
                         </div>
 
                         <div className="space-y-2 text-sm sm:text-base  text-gtwalsheim">
-                            <p>📍 Badrinath Rd, near SBI bank, Tapovan, Rishikesh, Uttarakhand 249192</p>
-                            <p>📞 +91 84491 08668</p>
-                            <p>✉️ <a href="mailto:Retreats@akhandayoga.com" className="underline hover:text-[#f4b400] font-sans">Retreats@akhandayoga.com</a></p>
+                            <p>📍 Akhanda Ayurveda , Uma Kutir, near bhumi cafe, Shivananda Nagar Tapovan, Rishikesh, Uttrakhand, 249192</p>
+                            <p>📞 +91 9286378671</p>
+                            <p>✉️ <a href="mailto:Ayurveda@akhandayoga.com" className="underline hover:text-[#f4b400] font-sans">Retreats@akhandayoga.com</a></p>
                         </div>
                         <div className="flex justify-center space-x-6 mt-6">
                             {/* Social icons */}
@@ -69,8 +69,8 @@ export default function FooterSection() {
                                 className="object-contain w-full h-full"
                             />
                         </div>
-                        <p className="mt-8 font-sans mb-1 text-gtwalsheim">📍 Badrinath Rd, near SBI bank, Tapovan, Rishikesh, Uttarakhand 249192</p>
-                        <p className="font-sans mb-1">📞 +91 84491 08668</p>
+                        <p className="mt-8 font-sans mb-1 text-gtwalsheim">📍 Akhanda Ayurveda , Uma Kutir, near bhumi cafe, Shivananda Nagar Tapovan, Rishikesh, Uttrakhand, 249192</p>
+                        <p className="font-sans mb-1">📞 +91 9286378671</p>
                         <p className="font-sans">
                             ✉️ <a href="mailto:ayurveda@akhandayoga.com" className="underline hover:text-[#f4b400]">Ayurveda@akhandayoga.com</a>
                         </p>
