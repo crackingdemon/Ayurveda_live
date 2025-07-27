@@ -119,7 +119,7 @@ export default function FooterSection() {
                             </a>
 
                         </div>
-                        <p className=" text-gtwalsheim mt-10 text-xs font-sans opacity-70">&copy; {new Date().getFullYear()} Anand Prakash Ashram. All rights reserved.</p>
+                        <p className=" text-gtwalsheim mt-10 text-xs font-sans opacity-70">&copy; {new Date().getFullYear()} Anand Prakash Yoga Ashram & Yoga Teacher Training Center. All rights reserved.</p>
                     </motion.div>
                 </div>
             </div>
