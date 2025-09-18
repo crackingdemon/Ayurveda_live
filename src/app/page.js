@@ -6,6 +6,7 @@ import WhatIsAshramSection from "./components/WhatIsAshramSection";
 import WomenSafetySection from "./components/WomenSafetySection";
 import FullImageSection from "./components/FullImageSection";
 import Understand from "./components/Understand.jsx";
+import RaviDr from "./components/RaviDr";
 import TierSection from "./components/TierSection";
 import Tier2 from "./components/Tier2";
 import Tier3 from "./components/Tier3";
@@ -56,6 +57,7 @@ export default function Home() {
       <Hero />
       <WelcomeSection />
       <Understand />
+      <RaviDr />
       <FounderSection />
       <TierSection />
       <Tier2 />
