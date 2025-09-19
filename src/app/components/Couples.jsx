@@ -22,7 +22,7 @@ export default function CouplesOptionSection() {
         transition={{ duration: 1 }}
         viewport={{ once: false }}
         className="w-full max-w-7xl flex flex-col 2xl:scale-125 space-y-8"
-      >
+      ><br></br>
         {/* Title */}
         <h1 className="text-Black-Mango-ExtraBold text-[#683900] text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight font-light tracking-wide serif">
           Couples Option (Add-On):
