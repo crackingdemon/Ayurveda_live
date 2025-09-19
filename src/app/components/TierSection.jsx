@@ -14,14 +14,15 @@ export default function Tier1Section() {
   if (!mounted) return null
 
   return (
-    <section className="min-h-screen w-full bg-[#ab6869] flex items-center justify-center text-white py-12 px-4 sm:px-8 md:px-16 lg:px-24">
-      <MotionDiv
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: false }}
-        className="w-full max-w-6xl flex flex-col items-center 2xl:scale-125 space-y-8"
-      >
+    <section className="w-full bg-[#ab6869] text-white py-12 px-4 sm:px-8 md:px-16 lg:px-24">
+      <div className="min-h-screen flex items-center justify-center">
+        <MotionDiv
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: false }}
+          className="w-full max-w-6xl flex flex-col items-center space-y-8"
+        >
         {/* Title */}
         <h1 className="text-Black-Mango-ExtraBold text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-snug font-normal text-center">
           Tier 1 - Rose Quartz- Rejuvenation: <br />
@@ -108,7 +109,18 @@ export default function Tier1Section() {
             peaceful reset.
           </p>
         </div>
-      </MotionDiv>
+
+        {/* Book Now Button */}
+        <div className="w-full flex justify-center mt-8">
+          <a
+            href="mailto:ayurveda@akhandayoga.com?subject=Book Now - Tier 1 Rose Quartz Rejuvenation&body=Hello, I would like to book the Tier 1 Rose Quartz Rejuvenation package. Please provide me with more information about availability and booking process."
+            className="bg-white text-[#ab6869] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform duration-300"
+          >
+            Book Now
+          </a>
+        </div>
+        </MotionDiv>
+      </div>
     </section>
   )
 }
