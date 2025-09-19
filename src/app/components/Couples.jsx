@@ -143,7 +143,7 @@ export default function CouplesOptionSection() {
         </div>
 
         {/* Bottom Description */}
-        <div className="text-gtwalsheim w-full mt-4">
+        <div className="text-gtwalsheim w-full mt-4 mb-16 sm:mb-20 md:mb-24">
           <p className="text-[#683900] font-light text-base sm:text-lg md:text-xl leading-relaxed">
             This nurturing Ayurvedic immersion is designed for women—and optionally, couples—who wish to
             <br></br> consciously prepare for conception.
